@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e1a1c">
+<meta name="description" content="OstriV: гриль, десерти та кава. Щодня з 8:00 до 22:00.">
+<title>OstriV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <nav class="nav" aria-label="Головне меню">
+    <a class="logo" href="#home"><i></i>OstriV</a>
+    <ul>
+      <li><a class="l" href="#home" data-link="home">Головна</a></li>
+      <li><a class="l" href="#menu" data-link="menu">Меню</a></li>
+      <li><button type="button" class="l" data-open-contacts aria-haspopup="dialog">Контакти</button></li>
+    </ul>
+  </nav>
+
+  <!-- Головна -->
+  <main class="view" data-view="home">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Гриль · Десерти · Кава</p>
+        <h1>Ost<span>riV</span></h1>
+        <p class="lead">Вогонь, вугілля і щось солодке до кави. Місце, де хочеться затриматися.</p>
+        <div class="cta">
+          <a class="btn fill" href="#menu">Дивитись меню</a>
+          <button type="button" class="btn ghost" data-open-contacts aria-haspopup="dialog">Контакти</button>
+        </div>
+      </div>
+      <div class="map" aria-hidden="true">
+        <svg id="island" viewBox="-300 -300 600 600"></svg>
+      </div>
+    </header>
+
+    <div class="coasts-link">
+      <a class="tile grill" href="#menu">
+        <h3>Гриль</h3>
+        <p>Стейки, шашлик, реберця й овочі на відкритому вогні.</p>
+        <span class="go">Дивитись страви →</span>
+      </a>
+      <a class="tile sweet" href="#menu">
+        <h3>Десерти</h3>
+        <p>Чізкейк, тірамісу, фондан та інше солодке до кави.</p>
+        <span class="go">Дивитись десерти →</span>
+      </a>
+    </div>
+
+    <section class="about" id="about">
+      <h3>Два береги на одному острові</h3>
+      <div>
+        <p>З одного боку жар: м’ясо, риба й овочі на відкритому вогні. З іншого ніжні десерти, які добре йдуть до кави, чаю та розмов не поспішаючи.</p>
+        <p>Приходьте на обід, на вечерю чи просто за чимось солодким. На острові знайдеться місце і для компанії, і для двох.</p>
+        <div class="facts">
+          <div class="fact">Готуємо на вугіллі</div>
+          <div class="fact">Десерти до кави</div>
+          <div class="fact">Для компанії та для двох</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="find">
+      <a class="mapcard" href="https://maps.app.goo.gl/PadVRruo9yZoFoSm7" target="_blank" rel="noopener" aria-label="Відкрити розташування кафе на Google Maps">
+        <span class="minimap" data-minimap></span>
+        <span class="chipmap">Відкрити на Google Maps ↗</span>
+      </a>
+      <div class="info">
+        <div>
+          <h3>Де нас знайти</h3>
+          <p>Натисніть на мапу, і Google Maps покаже маршрут до нас.</p>
+        </div>
+        <div>
+          <h3>Години роботи</h3>
+          <p class="hours">Щодня<br><b>8:00 – 22:00</b></p>
+          <p class="status" data-status hidden><i></i><span></span></p>
+        </div>
+        <div>
+          <h3>Новини й акції</h3>
+          <p><a href="https://www.instagram.com/o_ostriv_o" target="_blank" rel="noopener">@o_ostriv_o</a> в Instagram</p>
+        </div>
+        <p><a class="quiet" href="https://maps.app.goo.gl/PadVRruo9yZoFoSm7" target="_blank" rel="noopener">Були в нас? Залишити відгук</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Меню -->
+  <main class="view" data-view="menu" hidden>
+    <div class="view-head">
+      <h2>Меню</h2>
+      <p>Приклад страв з нашої кухні. Актуальні позиції й ціни дивіться в Instagram.</p>
+    </div>
+    <div class="coasts">
+      <article class="coast grill">
+        <h3>Гриль</h3>
+        <p>Відкритий вогонь, вугілля, соковитий смак</p>
+        <ul>
+          <li><b>Стейк рибай</b><span>Мармурова яловичина, смажена на вугіллі</span></li>
+          <li><b>Реберця BBQ</b><span>Довго запечені, з димним соусом</span></li>
+          <li><b>Шашлик зі свинячої шиї</b><span>Маринад з цибулею та спеціями</span></li>
+          <li><b>Крильця на грилі</b><span>З гострим або медово-гірчичним соусом</span></li>
+          <li><b>Лосось на грилі</b><span>З лимоном і свіжими травами</span></li>
+          <li><b>Овочі гриль</b><span>Баклажан, перець, кабачок, печериці</span></li>
+        </ul>
+      </article>
+      <article class="coast sweet">
+        <h3>Десерти</h3>
+        <p>Солодке завершення вечора</p>
+        <ul>
+          <li><b>Чізкейк</b><span>Ніжний, з ягідним соусом</span></li>
+          <li><b>Тірамісу</b><span>Савоярді, маскарпоне, кава</span></li>
+          <li><b>Шоколадний фондан</b><span>З кулькою морозива</span></li>
+          <li><b>Медовик</b><span>Тонкі коржі та сметанний крем</span></li>
+          <li><b>Панна-котта</b><span>Ванільна, з малиною</span></li>
+          <li><b>Макаронс</b><span>Асорті з різними смаками</span></li>
+        </ul>
+      </article>
+    </div>
+    <div class="drinks">
+      <span class="eyebrow">Напої</span>
+      <span class="chip">Кава</span>
+      <span class="chip">Чай</span>
+      <span class="chip">Домашні лимонади</span>
+      <span class="chip">Какао</span>
+      <span class="chip">Свіжі соки</span>
+    </div>
+  </main>
+
+  <footer>
+    <span>© OstriV</span>
+    <span>
+      <a href="https://www.instagram.com/o_ostriv_o" target="_blank" rel="noopener">Instagram</a> ·
+      <a href="https://maps.app.goo.gl/PadVRruo9yZoFoSm7" target="_blank" rel="noopener">Google Maps</a> ·
+      Щодня 8:00 – 22:00
+    </span>
+  </footer>
+</div>
+
+<!-- Вікно контактів -->
+<div class="overlay" id="contacts-overlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="contacts-title">
+    <button type="button" class="close" id="contacts-close" aria-label="Закрити">×</button>
+    <h2 id="contacts-title">Контакти</h2>
+    <div class="rows">
+      <div class="row">
+        <h3>Де нас знайти</h3>
+        <a class="mapcard small" href="https://maps.app.goo.gl/PadVRruo9yZoFoSm7" target="_blank" rel="noopener" aria-label="Відкрити розташування кафе на Google Maps">
+          <span class="minimap" data-minimap></span>
+          <span class="chipmap">Відкрити на Google Maps ↗</span>
+        </a>
+      </div>
+      <div class="row">
+        <h3>Години роботи</h3>
+        <p>Щодня з 8:00 до 22:00</p>
+        <p class="status" data-status hidden><i></i><span></span></p>
+      </div>
+      <div class="row">
+        <h3>Instagram</h3>
+        <p><a href="https://www.instagram.com/o_ostriv_o" target="_blank" rel="noopener">@o_ostriv_o</a>, пишіть у Direct</p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn fill" href="https://maps.app.goo.gl/PadVRruo9yZoFoSm7" target="_blank" rel="noopener">Відкрити мапу</a>
+      <a class="btn ghost" href="https://www.instagram.com/o_ostriv_o" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <a class="quiet" href="https://maps.app.goo.gl/PadVRruo9yZoFoSm7" target="_blank" rel="noopener">Були в нас? Залишити відгук</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
